@@ -416,5 +416,72 @@ def Hollow_Diamond_pyramid(rows):
                 print("  ",end="")
         print("")
 
+def Hollow_Hourglass(rows):
+    for i in range(rows):
+        for j in range(i):
+            print("  ",end="")
+        for k in range(2*(rows-i)-1):
+            if k==0 or k==2*(rows-i)-2 or i==0:
+                print("* ",end="")
+            else:
+                print("  ",end="")
+        print("")
+    for i in range(1,rows):
+        for j in range(rows-i-1):
+            print("  ",end="")
+        for k in range(2*i+1):
+            if k==0 or k==2*i or i==rows-1:
+                print("* ",end="")
+            else:
+                print("  ",end="")
+        print("")
 
-Hollow_Diamond_pyramid(rows)
+
+    for i in range(rows):
+        for j in range(i):
+            print("  ",end="")
+        for k in range(2*(rows-i)-1):
+            if k==0 or k==2*(rows-i)-2 or i==0:
+                print(f"{k+1} ",end="")
+            else:
+                print("  ",end="")
+        print("")
+    for i in range(1,rows):
+        for j in range(rows-i-1):
+            print("  ",end="")
+        for k in range(2*i+1):
+            if k==0 or k==2*i or i==rows-1:
+                print(f"{k+1} ",end="")
+            else:
+                print("  ",end="")
+        print("")
+
+
+    for i in range(rows):
+        for j in range(i):
+            print("  ",end="")
+        for k in range(2*(rows-i)-1):
+            if k==0 or k==2*(rows-i)-2 or i==0:
+                print(f"{chr(k+65)} ",end="")
+            else:
+                print("  ",end="")
+        print("")
+    for i in range(1,rows):
+        for j in range(rows-i-1):
+            print("  ",end="")
+        for k in range(2*i+1):
+            if k==0 or k==2*i or i==rows-1:
+                print(f"{chr(k+65)} ",end="")
+            else:
+                print("  ",end="")
+        print("")
+
+
+
+
+
+# def floyds_triangle(rows):
+
+
+
+Hollow_Hourglass(rows)
