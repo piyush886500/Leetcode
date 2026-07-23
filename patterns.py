@@ -480,8 +480,33 @@ def Hollow_Hourglass(rows):
 
 
 
-# def floyds_triangle(rows):
+def floyds_triangle(rows):
+    a = 1
+    for i in range(rows):
+        for j in range(i+1):
+            print(f"{chr(a+64)}",end="")
+            a+=1
+        print("")
 
 
+def pascals_triangel(rows):
+    for i in range(rows):
+        for j in range(rows-i-1):
+            print(" ",end="")
+        for k in range(i+1):
+            print("* ",end="")
+        print("")
 
-Hollow_Hourglass(rows)
+    # for i in range(rows):
+    #     a=1
+    #     for j in range(rows-i-1):
+    #         print(" ",end="")
+    #     for k in range(i+1):
+    #         print(f"{a} ",end="")
+    #         if k== 0 or k == i+1:
+    #             a=1
+    #         else:
+    #             a=a+1
+    #     print("")
+
+pascals_triangel(rows)
